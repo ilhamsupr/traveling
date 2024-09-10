@@ -21,6 +21,7 @@
   box-sizing: border-box;
   list-style: none;
   list-style-type: none;
+  text-decoration: none;
 }
 
 body {
@@ -47,6 +48,29 @@ section {
   padding: 6rem 2rem;
   @media only screen and (max-width: 600px) {
     padding: 4rem 1rem;
+  }
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
   }
 }
 
