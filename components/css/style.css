@@ -235,7 +235,7 @@ header {
 
 .about__text {
   flex: 1;
-  padding: 8rem;
+  padding: 5rem;
   color: #ffffff;
   margin-right: 2rem;
   display: flex;
@@ -243,13 +243,22 @@ header {
   justify-content: flex-start;
   height: 100vh;
   background-color: var(--secondary-c);
-  max-width: 500px;
+  max-width: 400px;
+  padding-top: 300px;
 }
 
+
 .about__title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  
 }
+
+.text-2 {
+  margin-top: 1px;
+  font-size: 2rem;
+  
+}
+
 
 .about__description {
   font-size: 1rem;
@@ -260,7 +269,7 @@ header {
   flex: 1;
   display: flex;
   gap: 1rem;
-  margin-left: 5rem;
+  margin-left: 1.3rem;
 }
 
 .about__card {
@@ -269,9 +278,9 @@ header {
   flex-direction: column;
   overflow: hidden;
   margin-top: 8rem;
-  /* margin-right: 1.5rem; */
+  margin-left: 2rem;
   color: wheat;
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -302,7 +311,90 @@ header {
   text-align: center;
 }
 
+
+/* travel */
+
+/* services */
+
+
+/* testi */
+.testimonials {
+  background-image: url('/components/assets/testimonials/img.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+}
+
+.testimonials__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px; 
+
+.testimonials h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 30%;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; 
+}
+
+.star {
+  font-size: 24px;
+  color: #ffd700; 
+  margin: 0 2px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
+
+/* home */
+
+
+
+
+/* about */
+
+
   .about__container {
     display: flex;
     flex-direction: column;
