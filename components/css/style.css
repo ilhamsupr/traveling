@@ -189,7 +189,7 @@ header {
 
         h1 {
           color: var(--body-c);
-          font-size: 5rem;
+          font-size: 4rem;
           max-width: 40%;
           letter-spacing: 2px;
           font-weight: 400;
@@ -321,6 +321,7 @@ header {
 .services {
   padding: 2rem 0;
   height: 100vh;
+  justify-content: center;
 }
 
 .services__container {
@@ -455,6 +456,8 @@ margin-bottom: 50px;
   color: #555;
   margin-top: 10px;
 }
+
+/* contact */
 
 
 
