@@ -230,7 +230,6 @@ header {
 .about__content {
   display: flex;
   justify-content: space-between;
-  /* align-items: stretch; */
 }
 
 .about__text {
@@ -247,18 +246,14 @@ header {
   padding-top: 300px;
 }
 
-
 .about__title {
   font-size: 1.5rem;
-  
 }
 
 .text-2 {
   margin-top: 1px;
   font-size: 2rem;
-  
 }
-
 
 .about__description {
   font-size: 1rem;
@@ -282,6 +277,12 @@ header {
   color: wheat;
   width: 250px;
   height: auto;
+  position: relative;
+}
+
+.about__card-image-wrapper {
+  position: relative;
+  width: 100%;
 }
 
 .about__card-image {
@@ -289,32 +290,107 @@ header {
   height: 350px;
   object-fit: cover;
   transition: 1.2s ease-in-out;
-  overflow: hidden;
 }
+
 .about__card-image:hover {
-  scale: 1.1;
-  overflow: hidden;
+  transform: scale(1.1);
 }
 
-.about__card-content {
-  padding: 1.5rem;
-}
-
-.about__card h3 {
+.about__card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
   font-size: 1.2rem;
-  margin-top: 1.2rem;
   text-align: center;
+  width: calc(100% - 20px);
 }
 
 .about__card p {
   font-size: 0.9rem;
   text-align: center;
+  padding: 1rem;
 }
 
 
 /* travel */
 
 /* services */
+.services {
+  padding: 2rem 0;
+  height: 100vh;
+}
+
+.services__container {
+  text-align: center;
+  justify-content: center;
+}
+
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.services__card {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 250px;
+  height: auto;
+  position: relative;
+  margin: 1rem;
+}
+
+.services__card-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.services__card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services__card-image:hover {
+  transform: scale(1.1);
+}
+
+.services__card-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(0, 0, 0);
+  
+  padding: 1px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: calc(100% - 20px);
+}
+
+.highlight {
+  color: var(--primary-c);
+}
+
+.services__container h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.services__container h2{
+  font-size: 1.4rem;
+ font-weight: normal;
+  text-align: center;
+margin-bottom: 50px;
+}
+
+
 
 
 /* testi */
@@ -395,70 +471,5 @@ header {
 /* about */
 
 
-  .about__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    height: 160vh;
-    width: 100%;
-  }
-  .about__content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .about__text {
-    max-width: 100%;
-    margin-bottom: 2rem;
-    height: 3rem;
-    text-align: center;
-    background-color: none;
-    margin-right: 0;
-    padding-top: 2rem;
-    padding-left: 2px;
-    padding-right: 2px;
-  }
-  .about__title {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .about__description {
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .about__cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10rem;
-  }
-  .about__card {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .about__card-image {
-    width: 100%;
-    height: auto;
-  }
-  .about__card-title {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-  .about__card-content {
-    padding: 1rem;
-    text-align: center;
-  }
-  .about__card p {
-    font-size: 0.8rem;
-    max-width: 90%;
-  }
+  
 }
